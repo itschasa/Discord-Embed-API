@@ -1,0 +1,14 @@
+{
+    "title": "Want to advertise YOUR SHOP?",
+    "description": "💜 - Mass DM on Discord to MILLIONS of users!\n💸 - Tokens starting from $0.02!\n🤩 - Get MORE SALES + MORE PROFIT on your shop!\n\nGet Started Today!",
+    "redirect": "https://discord.gg/invite",
+    "color": "#7289da",
+    "provider": {
+        "name": "Click here to view our sellix!",
+        "url": "https://shop.sellix.io/"
+    },
+    "image": {
+        "thumbnail": false,
+        "url": "https://i.imgur.com/7v2sRvV.jpg"
+    }
+}
