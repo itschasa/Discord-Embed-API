@@ -233,20 +233,6 @@ def oembed_json(path):
 
     return utils.returnJSON(data), 200
 
-@app.route('/assets/<path:path>')
-@limiter.exempt
-def send_js(path):
-    return send_from_directory('assets', path)
-
-@app.route('/vendors/<path:path>')
-@limiter.exempt
-def send_js2(path):
-    return send_from_directory('vendors', path)
-
-@app.route('/')
-@limiter.exempt
-def home():
-    return render_template('home.html')
 
 if __name__ == '__main__':
     app.run('0.0.0.0',8080)
