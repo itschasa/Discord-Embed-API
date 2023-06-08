@@ -7,7 +7,7 @@ Technical details about how to display embeds with html is in `technicals.html`.
 ### Example
 The payload you'd send to the API for this embed is in the client folder.
 
-![Example 1](https://raw.githubusercontent.com/itschasa/e.chasa.wtf/main/example_1.jpg)
+![Example 1](https://raw.githubusercontent.com/itschasa/e.chasa.wtf/main/client/example_1.jpg)
 
 ### Deployment
 This server is not the most efficient or cleanest setup, but it will work out of the box.
