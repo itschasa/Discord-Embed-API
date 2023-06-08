@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv = "refresh" content = "4; url = {{ new_url }}" />
+
+        <meta content="{{ title }}" property="og:title">
+        <meta content="{{ description }}" property="og:description"> <!-- [Text](URL) doesnt work, links dont work as links -->
+        <link type="application/json+oembed" href="{{ o_url }}{{ id }}.json" />
+        
+        {% if image != "false" %}
+        <meta content="{{ image }}" property='og:image'>
+        {% endif %}
+
+        {% if thumbnail != "false" %}
+        <meta name="twitter:card" content="summary_large_image">
+        {% endif %}
+
+        {% if color != "false" %}
+        <meta name="theme-color" content="{{ color }}">
+        {% endif %}
+    </head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+        h1 {
+            font-family: 'Open Sans', sans-serif;
+            color: #e8e8e8;
+        }
+        h2 {
+            font-family: 'Open Sans', sans-serif;
+            color: #bcdff5,
+        }
+        h4 {
+            font-family: 'Open Sans', sans-serif;
+        }
+        a {
+            text-decoration:none;
+        }
+        body {
+            background-color: #070C22;
+        }
+        .content {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+    </style>
+    <body>
+        <center>
+            <div class="content">
+                <img src="https://i.imgur.com/WBAjtdc.gif" width="100" height="100">
+                <h1>You will be redirected in 4 seconds...</h3>
+                <h2>
+                    <a href="{{ new_url }}" style="color: #7ba6e3">Click here if you aren't being redirected.</a>
+                </h2>
+                <h4 style="color: #8a8a8a">
+                    Embeds provided with &lt;3 by
+                    <a href="https://e.chasa.wtf/" style="color: #b8bebf">e.chasa.wtf</a>
+                </h4>
+            </div>
+        </center>
+    </body>
+</html>
+
